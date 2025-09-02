@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keki Design - Diseñador Gráfico Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" style="background: #fff !important;">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="Logo Keki Design" style="height:60px;">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Inicio
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="min-height: 100vh; display: flex; align-items: center; background: #111 !important; padding-top: 80px; overflow: hidden;">
+        <div class="hero-container" style="position:relative; min-height:600px;">
+         <div class="hero-content" style="z-index:2; position:relative;">
+    <h1 class="hero-title" style="text-align: left;">
+        Diseño Gráfico <span class="resaltado">Profesional</span>
+    </h1>
+    <p class="hero-description">
+        Transformo tus ideas en diseños impactantes que conectan con tu audiencia. 
+        Especializado en identidad visual, branding y diseño digital para hacer crecer tu negocio.
+    </p>
+    <div class="hero-buttons">
+        <button class="btn btn-primary" style="background: #fff; color: #111;">Ver Portafolio</button>
+        <button class="btn btn-secondary custom-contact-btn">
+            <i class="fas fa-envelope"></i>
+            Contactar
+        </button>
+    </div>
+</div>
+
+<style>
+  .resaltado {
+    font-weight: bold;
+    color: #ffffff; /* Puedes cambiar este color según tu paleta */
+  }
+  .custom-contact-btn {
+    background: transparent !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    transition: background 0.3s, color 0.3s;
+  }
+  .custom-contact-btn:hover, .custom-contact-btn:focus {
+    background: #fff !important;
+    color: #111 !important;
+  }
+</style>
+            <img 
+                src="assets/Capa 0.png" 
+                alt="Hero Imagen" 
+                style="
+                    position: absolute;
+                    right: -350px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    bottom: 0;
+                    height: 170%;
+                    max-height: 5000px;
+                    width: auto;
+                    z-index:1;
+                    object-fit: contain;
+                    pointer-events: none;
+                    user-select: none;
+                "
+            >
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" style="padding-top: 120px; scroll-margin-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mi Portafolio</h2>
+                <p>Explora algunos de mis proyectos más destacados en diseño gráfico y branding</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Diseño Web</button>
+                <button class="filter-btn" data-filter="print">Impreso</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="assets/Round Sign Board Mockup.jpg" alt="Portada Identidad Corporativa" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="portfolio-overlay">
+                            <h4>Identidad Corporativa</h4>
+                            <p>Branding completo para empresa tecnológica</p>
+                            <button class="btn-view">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="assets/1.jpg" alt="Portada Diseño Web Responsivo" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="portfolio-overlay">
+                            <h4>Diseño Web Responsivo</h4>
+                            <p>Sitio web moderno</p>
+                            <button class="btn-view">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="assets/4436-round-edges-spiral-notepad-mockups-03.jpg" alt="Portada Material Impreso" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="portfolio-overlay">
+                            <h4>Material Impreso</h4>
+                            <p>Catálogo y brochures corporativos</p>
+                            <button class="btn-view">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="assets/Bolsa de cafe.jpg" alt="Portada Packaging Design" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="portfolio-overlay">
+                            <h4>Packaging Design</h4>
+                            <p>Diseño de empaque para producto orgánico</p>
+                            <button class="btn-view">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services" style="padding-top: 120px; scroll-margin-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mis Servicios</h2>
+                <p>Ofrezco soluciones completas de diseño gráfico para hacer crecer tu marca</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Identidad Visual</h3>
+                    <p>Desarrollo de logos, paletas de colores, tipografías y elementos gráficos que representen la esencia de tu marca.</p>
+                    <ul class="service-features">
+                        <li>Diseño de logo</li>
+                        <li>Manual de marca</li>
+                        <li>Paleta de colores</li>
+                        <li>Tipografías corporativas</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Diseño Web</h3>
+                    <p>Sitios web modernos, responsivos y optimizados que convierten visitantes en clientes potenciales.</p>
+                    <ul class="service-features">
+                        <li>Diseño responsivo</li>
+                        <li>UX/UI optimizado</li>
+                        <li>Landing pages</li>
+                        <li>E-commerce</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Material Impreso</h3>
+                    <p>Diseños para impresión de alta calidad: tarjetas, brochures, catálogos y material promocional.</p>
+                    <ul class="service-features">
+                        <li>Tarjetas de presentación</li>
+                        <li>Brochures y flyers</li>
+                        <li>Catálogos</li>
+                        <li>Packaging</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Contenido visual para redes sociales, campañas publicitarias y estrategias de marketing online.</p>
+                    <ul class="service-features">
+                        <li>Posts para redes sociales</li>
+                        <li>Banners publicitarios</li>
+                        <li>Infografías</li>
+                        <li>Email marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Soy un diseñador gráfico apasionado con más de 5 años de experiencia creando 
+                        identidades visuales que conectan marcas con sus audiencias. Mi enfoque combina 
+                        creatividad estratégica con técnicas modernas de diseño.
+                    </p>
+                    <p>
+                        He trabajado con empresas de diversos sectores, desde startups tecnológicas hasta 
+                        restaurantes locales, ayudándoles a comunicar su esencia a través del diseño. 
+                        Cada proyecto es una oportunidad de contar una historia única.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/IMG_20220531_224550_883.jpg" alt="Keki Design Foto" style="width:100%;max-width:340px;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Mis Clientes</h2>
+                <p>La satisfacción de mis clientes es mi mayor motivación</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Keki transformó completamente nuestra identidad visual. El logo y branding que creó superó todas nuestras expectativas. Profesional, creativo y muy atento a los detalles."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>CEO, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"El diseño web que hizo para nuestro restaurante aumentó nuestras reservas online en un 40%. Su trabajo es excepcional y siempre entrega a tiempo."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>Propietario, Sabor Auténtico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Trabajar con Keki fue una experiencia increíble. Entendió perfectamente nuestra visión y la plasmó en diseños que realmente conectan con nuestro público."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <p>Directora de Marketing, EcoVerde</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Listo Para Tu Próximo Proyecto?</h2>
+                <p>Cuéntame sobre tu proyecto y trabajemos juntos para hacer realidad tu visión</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" action="mailto:Kekidesign01@gmail.com" method="POST" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required style="color:#111;">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu Email" required style="color:#111;">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Empresa (Opcional)" style="color:#111;">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required style="color:#111;">
+                                <option value="" style="color:#111;">Selecciona un servicio</option>
+                                <option value="branding" style="color:#111;">Identidad Visual/Branding</option>
+                                <option value="web" style="color:#111;">Diseño Web</option>
+                                <option value="print" style="color:#111;">Material Impreso</option>
+                                <option value="marketing" style="color:#111;">Marketing Digital</option>
+                                <option value="other" style="color:#111;">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required style="color:#111;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="background:#000000; color:#ffffff;">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Kekidesign01@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+57 302 6060 238
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 9:00 - 18:00<br>Respuesta en 24h</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <h4>Presupuesto</h4>
+                            <p>Consulta gratuita<br>Precios competitivos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <img src="assets/logo-blanco.svg" alt="Logo Keki Design Blanco" style="height:40px;">
+                    </h3>
+                    <p>Construyendo el futuro, un proyecto a la vez.</p>
+                    <div class="social-links">
+                        <a href="https://www.behance.net/Kekidesign" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kekidesign" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_kekidesign_." target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KekiDesign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
