@@ -322,34 +322,43 @@
                 <h2>¿Listo Para Tu Próximo Proyecto?</h2>
                 <p>Cuéntame sobre tu proyecto y trabajemos juntos para hacer realidad tu visión</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm" action="mailto:Kekidesign01@gmail.com" method="POST" enctype="text/plain">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required style="color:#111;">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Tu Email" required style="color:#111;">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Empresa (Opcional)" style="color:#111;">
-                        </div>
-                        <div class="form-group">
-                            <select id="service" name="service" required style="color:#111;">
-                                <option value="" style="color:#111;">Selecciona un servicio</option>
-                                <option value="branding" style="color:#111;">Identidad Visual/Branding</option>
-                                <option value="web" style="color:#111;">Diseño Web</option>
-                                <option value="print" style="color:#111;">Material Impreso</option>
-                                <option value="marketing" style="color:#111;">Marketing Digital</option>
-                                <option value="other" style="color:#111;">Otro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required style="color:#111;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="background:#000000; color:#ffffff;">Enviar Mensaje</button>
-                    </form>
-                </div>
+            <form action="https://formsubmit.co/kekidesign01@gmail.com" method="POST">
+  <!-- Configuración oculta -->
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde tu sitio web">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Campos visibles -->
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Tu Nombre" required style="color:#111;">
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Tu Email" required style="color:#111;">
+  </div>
+  <div class="form-group">
+    <input type="text" name="company" placeholder="Empresa (Opcional)" style="color:#111;">
+  </div>
+  <div class="form-group">
+    <select name="service" required style="color:#111;">
+      <option value="">Selecciona un servicio</option>
+      <option value="branding">Identidad Visual/Branding</option>
+      <option value="web">Diseño Web</option>
+      <option value="print">Material Impreso</option>
+      <option value="marketing">Marketing Digital</option>
+      <option value="other">Otro</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <textarea name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required style="color:#111;"></textarea>
+  </div>
+
+  <!-- Botón de envío -->
+  <div class="form-group">
+    <button type="submit" style="background:#111; color:#fff; padding:10px 20px; border:none; cursor:pointer;">
+      Enviar
+    </button>
+  </div>
+</form>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
