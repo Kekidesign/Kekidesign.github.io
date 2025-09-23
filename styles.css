@@ -71,16 +71,19 @@ h1, h2, h3, h4, h5, h6 {
     gap: 2rem;
 }
 
-.nav-link {
+/* Navigation Links */
+.navbar .nav-menu .nav-item .nav-link {
     text-decoration: none;
-    color: #000;
+    color: #000 !important;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    display: inline-block;
+    padding: 0.5rem 0;
 }
 
-.nav-link:hover {
-    color: #667eea;
+.navbar .nav-menu .nav-item .nav-link:hover {
+    color: #667eea !important;
 }
 
 .nav-link::after {
