@@ -331,6 +331,24 @@
         </div>
     </section>
 
+    <!-- SVG Icons -->
+    <div style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-email" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 24 24">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </symbol>
+            <symbol id="icon-clock" viewBox="0 0 24 24">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+            </symbol>
+            <symbol id="icon-budget" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.97 1.5 2.98 3.58 3.32 1.71.3 2.26.8 2.26 1.67 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.37-1.64H8.32c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.25z"/>
+            </symbol>
+        </svg>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -338,70 +356,88 @@
                 <h2>¿Listo Para Tu Próximo Proyecto?</h2>
                 <p>Cuéntame sobre tu proyecto y trabajemos juntos para hacer realidad tu visión</p>
             </div>
-            <form action="https://formsubmit.co/kekidesign01@gmail.com" method="POST">
-  <!-- Configuración oculta -->
-  <input type="hidden" name="_subject" value="Nuevo mensaje desde tu sitio web">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+            <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+                <form action="https://formsubmit.co/kekidesign01@gmail.com" method="POST" style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <!-- Configuración oculta -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu sitio web">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
 
-  <!-- Campos visibles -->
-  <div class="form-group">
-    <input type="text" id="contactName" name="name" placeholder="Tu Nombre" required style="color:#111;">
-  </div>
-  <div class="form-group">
-    <input type="email" name="email" placeholder="Tu Email" required style="color:#111;">
-  </div>
-  <div class="form-group">
-    <input type="text" name="company" placeholder="Empresa (Opcional)" style="color:#111;">
-  </div>
-  <div class="form-group">
-    <select name="service" required style="color:#111;">
-      <option value="">Selecciona un servicio</option>
-      <option value="branding">Identidad Visual/Branding</option>
-      <option value="web">Diseño Web</option>
-      <option value="print">Material Impreso</option>
-      <option value="marketing">Marketing Digital</option>
-      <option value="other">Otro</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <textarea name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required style="color:#111;"></textarea>
-  </div>
+                    <!-- Campos visibles -->
+                    <div class="form-group" style="margin-bottom: 1rem;">
+                        <input type="text" id="contactName" name="name" placeholder="Tu Nombre" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1rem;">
+                        <input type="email" name="email" placeholder="Tu Email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1rem;">
+                        <input type="text" name="company" placeholder="Empresa (Opcional)" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1rem;">
+                        <select name="service" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; background-color: #fff; color: #111;">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="branding">Identidad Visual/Branding</option>
+                            <option value="web">Diseño Web</option>
+                            <option value="print">Material Impreso</option>
+                            <option value="marketing">Marketing Digital</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <textarea name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical; min-height: 120px;"></textarea>
+                    </div>
 
-  <!-- Botón de envío -->
-  <div class="form-group">
-    <button type="submit" style="background:#111; color:#fff; padding:10px 20px; border:none; cursor:pointer;">
-      Enviar
-    </button>
-  </div>
-</form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                    <!-- Botón de envío -->
+                    <div class="form-group" style="text-align: right;">
+                        <button type="submit" style="background: #111; color: #fff; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: background 0.3s ease;">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="contact-info" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div style="width: 32px; height: 32px; margin-right: 1rem; color: #111; flex-shrink: 0;">
+                            <svg width="24" height="24" fill="currentColor">
+                                <use xlink:href="#icon-email" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4>Email</h4>
-                            <p>Kekidesign01@gmail.com</p>
+                            <h4 style="margin: 0 0 0.25rem 0; color: #111;">Email</h4>
+                            <p style="margin: 0;">Kekidesign01@gmail.com</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+                    <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div style="width: 32px; height: 32px; margin-right: 1rem; color: #111; flex-shrink: 0;">
+                            <svg width="24" height="24" fill="currentColor">
+                                <use xlink:href="#icon-phone" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4>Teléfono</h4>
-                            <p>+57 302 6060 238
+                            <h4 style="margin: 0 0 0.25rem 0; color: #111;">Teléfono</h4>
+                            <p style="margin: 0;">+57 302 6060 238</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
+                    <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div style="width: 32px; height: 32px; margin-right: 1rem; color: #111; flex-shrink: 0;">
+                            <svg width="24" height="24" fill="currentColor">
+                                <use xlink:href="#icon-clock" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4>Horario</h4>
-                            <p>Lun - Vie: 9:00 - 18:00<br>Respuesta en 24h</p>
+                            <h4 style="margin: 0 0 0.25rem 0; color: #111;">Horario</h4>
+                            <p style="margin: 0;">Lun - Vie: 9:00 - 18:00<br>Respuesta en 24h</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-dollar-sign"></i>
+                    <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div style="width: 32px; height: 32px; margin-right: 1rem; color: #111; flex-shrink: 0;">
+                            <svg width="24" height="24" fill="currentColor">
+                                <use xlink:href="#icon-budget" />
+                            </svg>
+                        </div>
                         <div>
-                            <h4>Presupuesto</h4>
-                            <p>Consulta gratuita<br>Precios competitivos</p>
+                            <h4 style="margin: 0 0 0.25rem 0; color: #111;">Presupuesto</h4>
+                            <p style="margin: 0;">Consulta gratuita<br>Precios competitivos</p>
                         </div>
                     </div>
                 </div>
@@ -410,25 +446,32 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="background: #111; color: #fff; padding: 3rem 0 1rem; text-align: center;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>
-                        <img src="assets/logo-blanco.svg" alt="Logo Keki Design Blanco" style="height:40px;">
-                    </h3>
-                    <p style="text-align: center; margin-bottom: 1.5rem;">Construyendo el futuro, un proyecto a la vez.</p>
-                    <div class="social-links" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                        <a href="https://www.behance.net/Kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-behance"></i></a>
-                        <a href="#" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/_kekidesign_." target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <div class="footer-content" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+                <div class="footer-logo" style="margin-bottom: 1.5rem;">
+                    <img src="assets/logo-blanco.svg" alt="Logo Keki Design Blanco" style="height: 50px; width: auto;">
                 </div>
-                
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem; max-width: 600px; line-height: 1.6;">
+                    Construyendo el futuro, un proyecto a la vez.
+                </p>
+                <div class="social-links" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem;">
+                    <a href="https://www.behance.net/Kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1);">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1);">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_kekidesign_." target="_blank" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 KekiDesign. All rights reserved.</p>
+            <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.7);">&copy; 2025 KekiDesign. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
