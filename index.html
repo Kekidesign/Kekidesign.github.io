@@ -45,45 +45,61 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="min-height: 100vh; display: flex; align-items: center; background: #111 !important; padding-top: 80px; overflow: hidden;">
-        <div class="hero-container" style="position:relative; min-height:600px;">
-         <div class="hero-content" style="z-index:2; position:relative;">
-    <h1 class="hero-title" style="text-align: left;">
-        Diseño Gráfico <span class="resaltado">Profesional</span>
-    </h1>
-    <p class="hero-description">
-        Transformo tus ideas en diseños impactantes que conectan con tu audiencia. 
-        Especializado en identidad visual, branding y diseño digital para hacer crecer tu negocio.
-    </p>
-    <div class="hero-buttons">
-        <button class="btn btn-primary" style="background: #fff; color: #111;">Ver Portafolio</button>
-        <button class="btn btn-secondary custom-contact-btn">
-            <i class="fas fa-envelope"></i>
-            Contactar
-        </button>
-    </div>
-</div>
+    <section id="home" class="hero" style="min-height: 100vh; display: flex; align-items: center; background: #111 !important; padding-top: 80px; overflow: hidden; position: relative;">
+        <div class="hero-container" style="position:relative; min-height:600px; width: 100%;">
+            <div class="hero-content" style="z-index: 2; position: relative; color: #ffffff;">
+                <h1 class="hero-title" style="text-align: left; color: #ffffff;">
+                    Diseño Gráfico <span class="resaltado">Profesional</span>
+                </h1>
+                <p class="hero-description" style="color: #ffffff; margin-bottom: 2rem;">
+                    Transformo tus ideas en diseños impactantes que conectan con tu audiencia. 
+                    Especializado en identidad visual, branding y diseño digital para hacer crecer tu negocio.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.behance.net/Kekidesign" target="_blank" class="btn btn-primary" style="background: #fff; color: #111; text-decoration: none; display: inline-block;">Ver Portafolio</a>
+                    <button type="button" onclick="scrollToContact()" class="btn btn-secondary custom-contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Contactar
+                    </button>
+                </div>
+            </div>
+        </div>
 
-<style>
-  .resaltado {
-    font-weight: bold;
-    color: #ffffff; /* Puedes cambiar este color según tu paleta */
-  }
-  .custom-contact-btn {
-    background: transparent !important;
-    color: #fff !important;
-    border: 2px solid #fff !important;
-    transition: background 0.3s, color 0.3s;
-  }
-  .custom-contact-btn:hover, .custom-contact-btn:focus {
-    background: #fff !important;
-    color: #111 !important;
-  }
-</style>
-            <img 
-                src="assets/Capa 0.png" 
-                alt="Hero Imagen" 
-                style="
+        <style>
+            .resaltado {
+                font-weight: bold;
+                color: #ffffff;
+            }
+            .custom-contact-btn {
+                background: transparent !important;
+                color: #fff !important;
+                border: 2px solid #fff !important;
+                transition: background 0.3s, color 0.3s;
+            }
+            .custom-contact-btn:hover, .custom-contact-btn:focus {
+                background: #fff !important;
+                color: #111 !important;
+            }
+            
+            /* Mobile styles */
+            @media (max-width: 768px) {
+                .hero img {
+                    opacity: 0.35; 
+                }
+                .hero-content {
+                    text-align: center;
+                    padding: 20px;
+                }
+                .hero-title {
+                    text-align: center !important;
+                }
+            }
+        </style>
+        
+        <img 
+            src="assets/Capa 0.png" 
+            alt="Hero Imagen" 
+            style="
                     position: absolute;
                     right: -350px;
                     top: 50%;
@@ -330,7 +346,7 @@
 
   <!-- Campos visibles -->
   <div class="form-group">
-    <input type="text" name="name" placeholder="Tu Nombre" required style="color:#111;">
+    <input type="text" id="contactName" name="name" placeholder="Tu Nombre" required style="color:#111;">
   </div>
   <div class="form-group">
     <input type="email" name="email" placeholder="Tu Email" required style="color:#111;">
@@ -401,41 +417,15 @@
                     <h3>
                         <img src="assets/logo-blanco.svg" alt="Logo Keki Design Blanco" style="height:40px;">
                     </h3>
-                    <p>Construyendo el futuro, un proyecto a la vez.</p>
-                    <div class="social-links">
-                        <a href="https://www.behance.net/Kekidesign" target="_blank"><i class="fab fa-behance"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/kekidesign" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/_kekidesign_." target="_blank"><i class="fab fa-instagram"></i></a>
+                    <p style="text-align: center; margin-bottom: 1.5rem;">Construyendo el futuro, un proyecto a la vez.</p>
+                    <div class="social-links" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <a href="https://www.behance.net/Kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-behance"></i></a>
+                        <a href="#" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kekidesign" target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_kekidesign_." target="_blank" style="color: #fff; font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">API</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 KekiDesign. All rights reserved.</p>
@@ -443,6 +433,20 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function scrollToContact() {
+            const contactSection = document.getElementById('contact');
+            const nameField = document.getElementById('contactName');
+            
+            // Smooth scroll to contact section
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Focus on the name field after scrolling is complete
+            setTimeout(() => {
+                nameField.focus();
+            }, 800); // Slight delay to ensure scrolling is complete
+        }
+    </script>
 </body>
 </html>
