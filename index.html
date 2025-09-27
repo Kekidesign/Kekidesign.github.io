@@ -36,11 +36,13 @@
                     </a>
                 </li>
             </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="mobile-menu">
+                <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -476,7 +478,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="/script.js"></script>
     <script>
         function scrollToContact() {
             const contactSection = document.getElementById('contact');

@@ -3,8 +3,11 @@ const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
 mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        return;
+    }
+    navMenu.classList.add('active');
 });
 
 // Close mobile menu when clicking on a link
